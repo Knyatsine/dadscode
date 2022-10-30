@@ -1,0 +1,148 @@
+/*Set site-wide defaults in body*/
+/*em prefferred for the font-size but 14px specified by style guide as default*/
+body {
+    font-size: 14px;
+    color: #333333;
+    font-family: Times, "Times New Roman", Georgia, serif;
+    margin: 0;
+    padding: 0;
+    width: 1024px;
+}
+
+/*Heading styled to match style guide avoid padding and margin between h1 and h2*/
+/*Padding and bottom margin removed from h3 to match the style guide*/
+/*15px top margin added to h3 to ensure at least 15px between news items*/
+h1 {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+h3 {
+    margin-bottom: 0;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+sub_heading {
+    padding: 0;
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+/*Set default for underlining on focus - recommended for accessibility*/
+*:focus {
+    text-decoration: underline;
+}
+
+/*Set default link behaviour - underline only on hover or focus*/
+a{
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+/*Top navigation element*/
+nav {
+    background-color: #333333;
+    color: #fefefe;
+    padding: 20px;
+    font-size: 120%;
+}
+
+/*Bullets removed from navigation list*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Link displayed inline to create horizontal list*/
+nav li {
+    display: inline-block;
+    margin-right: 20px; /*space between links*/
+}
+
+nav a {
+    color: #fefefe;
+}
+
+/*Show think red underline on focus or hover on navigation links*/
+nav a:hover, nav a:focus {
+    border-bottom: 3px solid #ff0000;
+    text-decoration: none;
+}
+
+/*Styling for current page in navbar*/
+.current_link {
+    border-bottom: 3px solid #ff0000;
+}
+
+header {
+    margin-left: 20px;
+}
+#main {
+    padding: 0;
+    width: 750px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/*Underline text and within figure on hover or focus*/
+/*Slight reduction in opacity on hover or focus*/
+figure:hover, figure:focus {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/*Caption displayed below images*/
+.caption {
+    display: block;
+}
+
+/*Figure elements positioned using absolute positioning*/
+#fig1 {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#fig2 {
+    position: absolute;
+    top: 150px;
+    left: 265px;
+}
+#fig3 {
+    position: absolute;
+    top: 150px;
+    left: 510px;
+}
+
+#fig4{
+    position: absolute;
+    top: 320px;
+    left: 20;
+}
+
+span.caption {
+    list-style: none;
+}
+
+
